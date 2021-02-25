@@ -1,0 +1,131 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Domain": "1.0.0",
+          "Persistence": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infrastructure.dll": {}
+        }
+      },
+      "Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Persistence.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Domain/1.0.0": {
+      "type": "project",
+      "path": "../Domain/Domain.csproj",
+      "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Infrastructure/Infrastructure.csproj",
+      "msbuildProject": "../Infrastructure/Infrastructure.csproj"
+    },
+    "Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Persistence/Persistence.csproj",
+      "msbuildProject": "../Persistence/Persistence.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Domain >= 1.0.0",
+      "Infrastructure >= 1.0.0",
+      "Persistence >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Jossias Mupandza\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Aplication\\Aplication.csproj",
+      "projectName": "Aplication",
+      "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Aplication\\Aplication.csproj",
+      "packagesPath": "C:\\Users\\Jossias Mupandza\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Aplication\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Jossias Mupandza\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "projectReferences": {
+            "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj"
+            },
+            "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Infrastructure\\Infrastructure.csproj"
+            },
+            "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Persistence\\Persistence.csproj": {
+              "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Persistence\\Persistence.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

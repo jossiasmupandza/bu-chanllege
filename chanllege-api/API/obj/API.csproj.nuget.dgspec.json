@@ -1,0 +1,295 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\API\\API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\API\\API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\API\\API.csproj",
+        "projectName": "API",
+        "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\Jossias Mupandza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\API\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jossias Mupandza\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Aplication\\Aplication.csproj": {
+                "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Aplication\\Aplication.csproj"
+              },
+              "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Infrastructure\\Infrastructure.csproj"
+              },
+              "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Persistence\\Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Aplication\\Aplication.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Aplication\\Aplication.csproj",
+        "projectName": "Aplication",
+        "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Aplication\\Aplication.csproj",
+        "packagesPath": "C:\\Users\\Jossias Mupandza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Aplication\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jossias Mupandza\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Infrastructure\\Infrastructure.csproj"
+              },
+              "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Persistence\\Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\Jossias Mupandza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jossias Mupandza\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Infrastructure\\Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Infrastructure\\Infrastructure.csproj",
+        "projectName": "Infrastructure",
+        "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Jossias Mupandza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jossias Mupandza\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj"
+              },
+              "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Persistence\\Persistence.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Persistence\\Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Persistence\\Persistence.csproj",
+        "projectName": "Persistence",
+        "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\Jossias Mupandza\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Jossias Mupandza\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.406\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
