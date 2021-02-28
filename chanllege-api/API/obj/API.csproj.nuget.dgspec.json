@@ -170,10 +170,6 @@
               "target": "Package",
               "version": "[8.0.1, )"
             },
-            "Expo.Server.SDK": {
-              "target": "Package",
-              "version": "[1.0.2, )"
-            },
             "FluentValidation.AspNetCore": {
               "target": "Package",
               "version": "[9.2.0, )"

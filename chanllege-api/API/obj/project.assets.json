@@ -1974,7 +1974,6 @@
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "8.0.1",
           "Domain": "1.0.0",
-          "Expo.Server.SDK": "1.0.2",
           "FluentValidation.AspNetCore": "9.2.0",
           "Infrastructure": "1.0.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "8.1.0",
