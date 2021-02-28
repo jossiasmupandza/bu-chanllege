@@ -25,65 +25,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="970cfdf2-008a-453f-993c-5abb5838e619" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/API/Controllers/QuizController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/API/Controllers/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Application.csproj" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Dtos/QuizDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Errors/ApiException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Errors/ApiResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Errors/ApiValidationErrorResponse.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Errors/RestException.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Helpers/CustomMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Helpers/RamdomStringGeneratorHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Interfaces/ICustomMapper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Interfaces/IEmailSender.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Interfaces/IRandomStringGenerator.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Quiz/CreateQuiz.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Infrastructure/Mailer/EmailService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Persistence/Migrations/20210228134604_AddPublicFlags.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Persistence/Migrations/20210228134604_AddPublicFlags.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Persistence/Migrations/20210228155630_AddNotificationEmail.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Persistence/Migrations/20210228155630_AddNotificationEmail.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/contentModel.xml" afterDir="false" />
+    <list default="true" id="970cfdf2-008a-453f-993c-5abb5838e619" name="Default Changelist" comment="Adds Create Quiz endpoint">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/API/API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/Controllers/BaseController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/API/Controllers/BaseController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/Extensions/ApplicationServicesExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/API/Extensions/ApplicationServicesExtensions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.chanllege-api/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.chanllege-api/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/Controllers/QuizController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/API/Controllers/QuizController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/API/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/obj/API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/API.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/obj/API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/API.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/obj/Debug/netcoreapp3.1/API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/Debug/netcoreapp3.1/API.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/obj/Debug/netcoreapp3.1/API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/Debug/netcoreapp3.1/API.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aplication/Aplication.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aplication/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aplication/Errors/ApiException.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aplication/Errors/ApiResponse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aplication/Errors/ApiValidationErrorResponse.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aplication/Errors/RestException.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aplication/obj/Aplication.csproj.nuget.g.props" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aplication/obj/Aplication.csproj.nuget.g.targets" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aplication/obj/Debug/netcoreapp3.1/Aplication.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aplication/obj/project.assets.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aplication/obj/project.nuget.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aplication/obj/rider.project.restore.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/Quiz.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Quiz.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Class1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Debug/netcoreapp3.1/Infrastructure.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistence/Migrations/DataContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Persistence/Migrations/DataContextModelSnapshot.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistence/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Persistence/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chanllege-api.sln" beforeDir="false" afterPath="$PROJECT_DIR$/chanllege-api.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Quiz/EditQuiz.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Quiz/EditQuiz.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +62,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/API/API.csproj" />
         <option value="$PROJECT_DIR$/Aplication/Aplication.csproj" />
         <option value="$PROJECT_DIR$/Domain/Domain.csproj" />
         <option value="$PROJECT_DIR$/Infrastructure/Infrastructure.csproj" />
@@ -148,20 +98,21 @@
         <option value="$PROJECT_DIR$/API/Controllers/QuizControler.cs" />
         <option value="$PROJECT_DIR$/API/Controllers/BaseController.cs" />
         <option value="$PROJECT_DIR$/Aplication/Quiz/CreateQuiz.cs" />
-        <option value="$PROJECT_DIR$/API/Startup.cs" />
         <option value="$PROJECT_DIR$/Aplication/Interfaces/IEmaiSender.cs" />
         <option value="$PROJECT_DIR$/Aplication/Interfaces/IEmailSender.cs" />
         <option value="$PROJECT_DIR$/Infrastructure/Mailer/EmailService.cs" />
         <option value="$PROJECT_DIR$/Application/Dtos/QuizDto.cs" />
         <option value="$PROJECT_DIR$/Application/Helpers/RamdomStringGeneratorHelper.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/IRandomStringGenerator.cs" />
-        <option value="$PROJECT_DIR$/API/Controllers/QuizController.cs" />
         <option value="$PROJECT_DIR$/API/Extensions/ApplicationServicesExtensions.cs" />
         <option value="$PROJECT_DIR$/Application/Application.csproj" />
         <option value="$PROJECT_DIR$/Application/Helpers/CustomMapper.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/ICustomMapper.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/IEmailSender.cs" />
         <option value="$PROJECT_DIR$/Application/Quiz/CreateQuiz.cs" />
+        <option value="$PROJECT_DIR$/Application/Quiz/EditQuiz.cs" />
+        <option value="$PROJECT_DIR$/API/Controllers/QuizController.cs" />
+        <option value="$PROJECT_DIR$/API/Startup.cs" />
       </list>
     </option>
   </component>
@@ -234,7 +185,7 @@
       <workItem from="1614427043805" duration="17171000" />
       <workItem from="1614449389523" duration="3573000" />
       <workItem from="1614502185232" duration="27806000" />
-      <workItem from="1614553494247" duration="94000" />
+      <workItem from="1614553494247" duration="2306000" />
     </task>
     <task id="LOCAL-00001" summary="create api structure">
       <created>1614277830450</created>
@@ -257,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614510442403</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Adds Create Quiz endpoint">
+      <created>1614553817485</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614553817485</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +241,8 @@
     <MESSAGE value="create api structure" />
     <MESSAGE value="adding dependecies" />
     <MESSAGE value="Adds Database Models, Api Extenxins, Seeds for Categories and InputTypes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds Database Models, Api Extenxins, Seeds for Categories and InputTypes" />
+    <MESSAGE value="Adds Create Quiz endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds Create Quiz endpoint" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614276466379">
@@ -378,22 +337,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="95" key="Rider.ProjectTemplateDialog.Size/0.0.1366.728@0.0.1366.728" timestamp="1614276288112" />
-    <state x="393" y="41" key="RiderGenerateDialog" timestamp="1614530716810">
+    <state x="393" y="41" key="RiderGenerateDialog" timestamp="1614554798236">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="393" y="41" key="RiderGenerateDialog/0.0.1366.728@0.0.1366.728" timestamp="1614530716810" />
+    <state x="393" y="41" key="RiderGenerateDialog/0.0.1366.728@0.0.1366.728" timestamp="1614554798236" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1614276609997">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1614276609997" />
-    <state width="498" height="457" key="SwitcherDM" timestamp="1614546477001">
+    <state width="498" height="457" key="SwitcherDM" timestamp="1614555681642">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="457" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1614546477001" />
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1614510485217">
+    <state width="498" height="457" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1614555681642" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1614553934795">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1614510485217" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1614553934795" />
     <state x="159" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1614277578593">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -414,17 +373,5 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="4" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1614277635278" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Application/Quiz/CreateQuiz.cs</url>
-          <line>55</line>
-          <properties documentPath="C:\Users\Jossias Mupandza\Documents\GitHub\bu-chanllege\chanllege-api\Aplication\Quiz\CreateQuiz.cs" initialLine="55" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

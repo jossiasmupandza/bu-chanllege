@@ -12,5 +12,11 @@ namespace API.Controllers
         {
             return await Mediator.Send(command);
         }
+        
+        [HttpPut]
+        public async Task<ActionResult<QuizDto>> EditQuiz(EditQuiz.EditQuizCommand command)
+        {
+            return await Mediator.Send(command);
+        }
     }
 }
