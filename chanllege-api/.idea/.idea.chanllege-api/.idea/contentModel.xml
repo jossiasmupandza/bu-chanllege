@@ -15,6 +15,8 @@
         </e>
         <e p="Controllers" t="Include">
           <e p="BaseController.cs" t="Include" />
+          <e p="QuizController.cs" t="Include" />
+          <e p="tsconfig.json" t="Include" />
         </e>
         <e p="Extensions" t="Include">
           <e p="ApplicationServicesExtensions.cs" t="Include" />
@@ -39,22 +41,37 @@
         </e>
         <e p="Startup.cs" t="Include" />
       </e>
-      <e p="Aplication" t="IncludeRecursive">
-        <e p="Aplication.csproj" t="IncludeRecursive" />
+      <e p="Application" t="IncludeRecursive">
+        <e p="Application.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
+        <e p="Dtos" t="Include">
+          <e p="QuizDto.cs" t="Include" />
+        </e>
         <e p="Errors" t="Include">
           <e p="ApiException.cs" t="Include" />
           <e p="ApiResponse.cs" t="Include" />
           <e p="ApiValidationErrorResponse.cs" t="Include" />
           <e p="RestException.cs" t="Include" />
         </e>
+        <e p="Helpers" t="Include">
+          <e p="CustomMapper.cs" t="Include" />
+          <e p="RamdomStringGeneratorHelper.cs" t="Include" />
+        </e>
+        <e p="Interfaces" t="Include">
+          <e p="ICustomMapper.cs" t="Include" />
+          <e p="IEmailSender.cs" t="Include" />
+          <e p="IRandomStringGenerator.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
-              <e p="Aplication.AssemblyInfo.cs" t="Include" />
+              <e p="Application.AssemblyInfo.cs" t="Include" />
             </e>
           </e>
+        </e>
+        <e p="Quiz" t="Include">
+          <e p="CreateQuiz.cs" t="Include" />
+          <e p="EditQuiz.cs" t="Include" />
         </e>
       </e>
       <e p="chanllege-api.sln" t="IncludeFlat" />
@@ -82,8 +99,10 @@
       </e>
       <e p="Infrastructure" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Class1.cs" t="Include" />
         <e p="Infrastructure.csproj" t="IncludeRecursive" />
+        <e p="Mailer" t="Include">
+          <e p="EmailService.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -102,6 +121,10 @@
           <e p="20210228095420_AddModels.Designer.cs" t="Include" />
           <e p="20210228105204_AddTypeColumn.cs" t="Include" />
           <e p="20210228105204_AddTypeColumn.Designer.cs" t="Include" />
+          <e p="20210228134604_AddPublicFlags.cs" t="Include" />
+          <e p="20210228134604_AddPublicFlags.Designer.cs" t="Include" />
+          <e p="20210228155630_AddNotificationEmail.cs" t="Include" />
+          <e p="20210228155630_AddNotificationEmail.Designer.cs" t="Include" />
           <e p="DataContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

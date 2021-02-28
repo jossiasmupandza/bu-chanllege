@@ -2,6 +2,8 @@ using System.Globalization;
 using API.Extensions;
 //using API.Helpers;
 using API.Middleware;
+using Aplication.Helpers;
+using Aplication.Quiz;
 //using API.Workers;
 //using Application.Users;
 using AutoMapper;
@@ -48,17 +50,23 @@ namespace API
                 });
             });
 
-            //services.AddMediatR(typeof(CreateUser.CreateUserCommand).Assembly);
+            services.AddMediatR(typeof(CreateQuiz.CreateQuizCommand).Assembly);
 
             services.AddControllers();
-                // .AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<CreateUser>())
-                // .AddNewtonsoftJson(options =>
-                //     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
-            
+
+            services.AddAutoMapper(typeof(CustomMapper));
+
+            //services.AddMediatR(typeof(CreateUser.CreateUserCommand).Assembly);
+
+            // services.AddControllers()
+            //     .AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<CreateUser>())
+            //     .AddNewtonsoftJson(options =>
+            //         options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
             // services.AddAutoMapper(typeof(MappingProfiles));
             //
             // services.AddHostedService<RevisionEmailWorker>();
-            
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

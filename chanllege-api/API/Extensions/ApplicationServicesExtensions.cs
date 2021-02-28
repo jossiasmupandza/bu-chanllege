@@ -1,4 +1,6 @@
 using System.Linq;
+using Application.Helpers;
+using Application.Interfaces;
 using Application.Errors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.DependencyInjection;
@@ -9,6 +11,8 @@ namespace API.Extensions
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
+            services.AddScoped<IRandomStringGenerator, RamdomStringGeneratorHelper>();
+            services.AddScoped<ICustomMapper, CustomMapper>();
             // services.AddScoped<IEmailSender, EmailService>();
             // services.AddScoped<IUserAccessor, UserAccessor>();
 

@@ -1968,7 +1968,7 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Aplication/1.0.0": {
+      "Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
@@ -1976,15 +1976,16 @@
           "Domain": "1.0.0",
           "FluentValidation.AspNetCore": "9.2.0",
           "Infrastructure": "1.0.0",
+          "MediatR": "8.1.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "8.1.0",
           "Persistence": "1.0.0",
           "System.Security.Permissions": "4.5.0"
         },
         "compile": {
-          "bin/placeholder/Aplication.dll": {}
+          "bin/placeholder/Application.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Aplication.dll": {}
+          "bin/placeholder/Application.dll": {}
         },
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
@@ -2008,6 +2009,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "Domain": "1.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "3.1.8",
           "Persistence": "1.0.0",
           "SendGrid": "9.21.0"
         },
@@ -6740,10 +6742,10 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
-    "Aplication/1.0.0": {
+    "Application/1.0.0": {
       "type": "project",
-      "path": "../Aplication/Aplication.csproj",
-      "msbuildProject": "../Aplication/Aplication.csproj"
+      "path": "../Application/Application.csproj",
+      "msbuildProject": "../Application/Application.csproj"
     },
     "Domain/1.0.0": {
       "type": "project",
@@ -6763,11 +6765,13 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Aplication >= 1.0.0",
+      "Application >= 1.0.0",
       "Domain >= 1.0.0",
       "Expo.Server.SDK >= 1.0.2",
       "Infrastructure >= 1.0.0",
       "JsonModelBinder >= 2.1.1",
+      "MediatR >= 8.1.0",
+      "MediatR.Extensions.Microsoft.DependencyInjection >= 8.1.0",
       "Microsoft.AspNetCore.Authentication >= 2.2.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.4",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 3.1.8",
@@ -6806,8 +6810,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Aplication\\Aplication.csproj": {
-              "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Aplication\\Aplication.csproj"
+            "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Application\\Application.csproj": {
+              "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Application\\Application.csproj"
             },
             "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Domain\\Domain.csproj"
@@ -6837,6 +6841,14 @@
           "JsonModelBinder": {
             "target": "Package",
             "version": "[2.1.1, )"
+          },
+          "MediatR": {
+            "target": "Package",
+            "version": "[8.1.0, )"
+          },
+          "MediatR.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[8.1.0, )"
           },
           "Microsoft.AspNetCore.Authentication": {
             "target": "Package",

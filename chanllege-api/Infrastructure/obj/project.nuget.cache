@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8n7WJdm4nZS7fL3avuJrPBzobAF764y92Nbh4Re+BGF0V95tYozAQBVCarD7cN6tlec8mni/lIX8bEmd6Qak9A==",
+  "dgSpecHash": "LRwJIuTHlJj3Mhj8lnRT+x7iHcsVQrSTlkq2cChSA1BKXgW52dpB971chv5VwsLth6MUYNO+2T7UzOko9QyJMw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jossias Mupandza\\Documents\\GitHub\\bu-chanllege\\chanllege-api\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -19,6 +19,7 @@
     "C:\\Users\\Jossias Mupandza\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.8\\microsoft.entityframeworkcore.sqlserver.3.1.8.nupkg.sha512",
     "C:\\Users\\Jossias Mupandza\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.8\\microsoft.extensions.caching.abstractions.3.1.8.nupkg.sha512",
     "C:\\Users\\Jossias Mupandza\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.8\\microsoft.extensions.caching.memory.3.1.8.nupkg.sha512",
+    "C:\\Users\\Jossias Mupandza\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.8\\microsoft.extensions.configuration.abstractions.3.1.8.nupkg.sha512",
     "C:\\Users\\Jossias Mupandza\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",
     "C:\\Users\\Jossias Mupandza\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Jossias Mupandza\\.nuget\\packages\\microsoft.extensions.identity.core\\5.0.1\\microsoft.extensions.identity.core.5.0.1.nupkg.sha512",

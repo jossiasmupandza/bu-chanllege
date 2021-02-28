@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+using Domain;
 
-namespace Domain
+namespace Application.Dtos
 {
-    public class Quiz
+    public class QuizDto
     {
         public int Id { get; set; }
         public string Title { get; set; }
@@ -16,11 +14,12 @@ namespace Domain
         public string QuizToken { get; set; }
         public string EditToken { get; set; }
         public string NotificationEmail { get; set; }
-        [Required] public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
-        public Category Category { get; set; }
-        public AppUser User { get; set; }
-        public ICollection<Question> Questions { get; set; } = new List<Question>();
-        public ICollection<Solution> Solutions { get; set; } = new List<Solution>();
+        public string Category { get; set; }
+        public string CreatorFullName { get; set; }
+        public int CreatorId { get; set; }
+        public List<Question> Questions { get; set; } = new List<Question>();
+        public List<Solution> Solutions { get; set; } = new List<Solution>();
     }
 }
