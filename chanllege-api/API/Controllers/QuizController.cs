@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Application.Dtos;
-using Application.Quiz;
+using Application.Quizzes;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers

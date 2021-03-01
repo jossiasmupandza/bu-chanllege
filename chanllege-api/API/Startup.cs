@@ -3,7 +3,7 @@ using API.Extensions;
 //using API.Helpers;
 using API.Middleware;
 using Application.Helpers;
-using Application.Quiz;
+using Application.Quizzes;
 //using API.Workers;
 //using Application.Users;
 using AutoMapper;
@@ -51,18 +51,16 @@ namespace API
             });
 
             services.AddMediatR(typeof(CreateQuiz.CreateQuizCommand).Assembly);
-
-            services.AddControllers();
+            //services.AddMediatR(typeof(CreateUser.CreateUserCommand).Assembly);
+            
+            //services.AddControllers();
+            services.AddControllers()
+                .AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<CreateQuiz>())
+                .AddNewtonsoftJson(options =>
+                    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
 
             services.AddAutoMapper(typeof(CustomMapper));
-
-            //services.AddMediatR(typeof(CreateUser.CreateUserCommand).Assembly);
-
-            // services.AddControllers()
-            //     .AddFluentValidation(cfg => cfg.RegisterValidatorsFromAssemblyContaining<CreateUser>())
-            //     .AddNewtonsoftJson(options =>
-            //         options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
-
+            
             // services.AddAutoMapper(typeof(MappingProfiles));
             //
             // services.AddHostedService<RevisionEmailWorker>();

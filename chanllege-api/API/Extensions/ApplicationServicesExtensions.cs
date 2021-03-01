@@ -13,6 +13,8 @@ namespace API.Extensions
         {
             services.AddScoped<IRandomStringGenerator, RamdomStringGeneratorHelper>();
             services.AddScoped<ICustomMapper, CustomMapper>();
+            services.AddScoped<IUploadFiles, UploadFilesHelper>();
+            services.AddScoped<IDocumentsUrl, DocumentsUrlHelper>();
             // services.AddScoped<IEmailSender, EmailService>();
             // services.AddScoped<IUserAccessor, UserAccessor>();
 

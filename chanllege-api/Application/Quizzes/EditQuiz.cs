@@ -11,7 +11,7 @@ using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
-namespace Application.Quiz
+namespace Application.Quizzes
 {
     public class EditQuiz
     {

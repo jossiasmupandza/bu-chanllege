@@ -15,6 +15,7 @@
         </e>
         <e p="Controllers" t="Include">
           <e p="BaseController.cs" t="Include" />
+          <e p="QuestionsController.cs" t="Include" />
           <e p="QuizController.cs" t="Include" />
           <e p="tsconfig.json" t="Include" />
         </e>
@@ -45,6 +46,7 @@
         <e p="Application.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Dtos" t="Include">
+          <e p="QuestionDto.cs" t="Include" />
           <e p="QuizDto.cs" t="Include" />
         </e>
         <e p="Errors" t="Include">
@@ -55,12 +57,16 @@
         </e>
         <e p="Helpers" t="Include">
           <e p="CustomMapper.cs" t="Include" />
+          <e p="DocumentsUrlHelper.cs" t="Include" />
           <e p="RamdomStringGeneratorHelper.cs" t="Include" />
+          <e p="UploadFilesHelper.cs" t="Include" />
         </e>
         <e p="Interfaces" t="Include">
           <e p="ICustomMapper.cs" t="Include" />
+          <e p="IDocumentsUrl.cs" t="Include" />
           <e p="IEmailSender.cs" t="Include" />
           <e p="IRandomStringGenerator.cs" t="Include" />
+          <e p="IUploadFiles.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -69,7 +75,10 @@
             </e>
           </e>
         </e>
-        <e p="Quiz" t="Include">
+        <e p="Questions" t="Include">
+          <e p="CreateQuestions.cs" t="Include" />
+        </e>
+        <e p="Quizzes" t="Include">
           <e p="CreateQuiz.cs" t="Include" />
           <e p="EditQuiz.cs" t="Include" />
         </e>
