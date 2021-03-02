@@ -45,6 +45,7 @@
       <e p="Application" t="IncludeRecursive">
         <e p="Application.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
+        <e p="Categories" t="Include" />
         <e p="Dtos" t="Include">
           <e p="OptionDto.cs" t="Include" />
           <e p="QuestionDto.cs" t="Include" />
@@ -84,6 +85,7 @@
           <e p="CreateQuiz.cs" t="Include" />
           <e p="EditQuiz.cs" t="Include" />
           <e p="GetQuizByToken.cs" t="Include" />
+          <e p="GetQuizzes.cs" t="Include" />
         </e>
       </e>
       <e p="chanllege-api.sln" t="IncludeFlat" />

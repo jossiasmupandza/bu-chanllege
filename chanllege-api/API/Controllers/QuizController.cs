@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using Application.Dtos;
 using Application.Quizzes;
 using Domain;
@@ -24,6 +25,12 @@ namespace API.Controllers
         public async Task<QuizDto> GetQuizByToken(string token)
         {
             return await Mediator.Send(new GetQuizByToken.GetQuizByTokenQuery {Token = token});
+        }
+        
+        [HttpGet]
+        public async Task<List<QuizDto>> GetQuizzes(GetQuizzes.GetQuizzesQuery query)
+        {
+            return await Mediator.Send(query);
         }
     }
 }
