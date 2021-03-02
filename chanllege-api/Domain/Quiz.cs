@@ -20,7 +20,7 @@ namespace Domain
         public DateTime UpdatedAt { get; set; }
         public Category Category { get; set; }
         public AppUser User { get; set; }
-        public ICollection<Question> Questions { get; set; } = new List<Question>();
-        public ICollection<Solution> Solutions { get; set; } = new List<Solution>();
+        public virtual ICollection<Question> Questions { get; set; } = new List<Question>();
+        public virtual ICollection<Solution> Solutions { get; set; } = new List<Solution>();
     }
 }

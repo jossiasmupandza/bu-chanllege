@@ -97,7 +97,7 @@ namespace Application.Questions
                         throw new RestException(HttpStatusCode.BadRequest, "Error savig questions changes");
                     }
 
-                    if (request.MultipleOptions)
+                    if (request.MultipleOptions && request.Options != null)
                     {
                         foreach (var option in request.Options)
                         {
@@ -116,32 +116,53 @@ namespace Application.Questions
                             throw new RestException(HttpStatusCode.BadRequest, "Error savig option changes");
                         }
                     }
-
-                    var document = await _uploadFiles.UploadDocuments(request.File);
-                    document.Question = question;
-
-                    await _context.Documents.AddAsync(document);
-                        
-                    if (await _context.SaveChangesAsync() < 1)
+                    
+                    var document = new Document();
+                    if (request.File != null)
                     {
-                        await transaction.RollbackAsync();
-                        throw new RestException(HttpStatusCode.BadRequest, "Error savig document changes");
+                        document = await _uploadFiles.UploadDocuments(request.File);
+                        document.Question = question;
+
+                        await _context.Documents.AddAsync(document);
+                        
+                        if (await _context.SaveChangesAsync() < 1)
+                        {
+                            await transaction.RollbackAsync();
+                            throw new RestException(HttpStatusCode.BadRequest, "Error savig document changes");
+                        }  
                     }
 
                     await transaction.CommitAsync();
 
-                    var mapper = _customMapper.GetMapper();
-                    var questionDto = mapper.Map<QuestionDto>(question);
-
-                    questionDto.QuizId = request.QuizId;
-                    questionDto.InputType = inputType;
-                    questionDto.Document = await _documentsUrl.GetDocumentUrl(document, "Questions");
-                        
-                    questionDto.Options = await _context.Options
+                    // var mapper = _customMapper.GetMapper();
+                    // var questionDto = mapper.Map<QuestionDto>(question);
+                    
+        
+                    var documentUrl = new Document();
+                    if (request.File != null)
+                    {
+                        documentUrl = await _documentsUrl.GetDocumentUrl(document, "Questions");
+                    }
+                    
+                    var options = await _context.Options
                         .Where(x => x.Question == question)
+                        .Select(x => new OptionDto
+                        {
+                            Description = x.Description,
+                            QuestionId = question.Id
+                        })
                         .ToListAsync();
 
-                    return questionDto;
+                    return new QuestionDto
+                    {
+                        Title = question.Title,
+                        Required = question.Required,
+                        Document = documentUrl,
+                        InputType = inputType,
+                        MultipleOptions = question.MultipleOptions,
+                        Options = options,
+                        QuizId = request.QuizId
+                    };
                 }
             }
         }

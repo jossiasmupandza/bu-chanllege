@@ -25,24 +25,29 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="970cfdf2-008a-453f-993c-5abb5838e619" name="Default Changelist" comment="Adds Edit Quiz endpoint">
-      <change afterPath="$PROJECT_DIR$/API/Controllers/QuestionsController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Dtos/QuestionDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Helpers/DocumentsUrlHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Helpers/UploadFilesHelper.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Interfaces/IDocumentsUrl.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Interfaces/IUploadFiles.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/Questions/CreateQuestions.cs" afterDir="false" />
+    <list default="true" id="970cfdf2-008a-453f-993c-5abb5838e619" name="Default Changelist" comment="Adds add question endpoint">
+      <change afterPath="$PROJECT_DIR$/Application/Dtos/OptionDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Questions/EditQuestion.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/Quizzes/GetQuizByToken.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.chanllege-api/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.chanllege-api/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/Controllers/QuestionsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/API/Controllers/QuestionsController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/Controllers/QuizController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/API/Controllers/QuizController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/Extensions/ApplicationServicesExtensions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/API/Extensions/ApplicationServicesExtensions.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/API/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/API/appsettings.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/API/obj/Debug/netcoreapp3.1/API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/Debug/netcoreapp3.1/API.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Dtos/QuestionDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Dtos/QuestionDto.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Application/Dtos/QuizDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Dtos/QuizDto.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Quiz/CreateQuiz.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Quizzes/CreateQuiz.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Application/Quiz/EditQuiz.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Quizzes/EditQuiz.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Helpers/CustomMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Helpers/CustomMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Helpers/UploadFilesHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Helpers/UploadFilesHelper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Interfaces/IUploadFiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Interfaces/IUploadFiles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Application/Questions/CreateQuestions.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Application/Questions/CreateQuestions.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Question.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Question.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/Quiz.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/Quiz.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistence/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Persistence/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,10 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Domain/Document.cs" />
-        <option value="$PROJECT_DIR$/Persistence/SeedData/Category.json" />
-        <option value="$PROJECT_DIR$/API/Extensions/IdentityServiceExtensions.cs" />
-        <option value="$PROJECT_DIR$/API/NewFile1.txt" />
         <option value="$PROJECT_DIR$/Domain/AppUser.cs" />
         <option value="$PROJECT_DIR$/API/appsettings.Development.json" />
         <option value="$PROJECT_DIR$/Persistence/DataContext.cs" />
@@ -84,7 +85,6 @@
         <option value="$PROJECT_DIR$/Persistence/SeedData/InputTypes.json" />
         <option value="$PROJECT_DIR$/Persistence/SeedData/Categories.json" />
         <option value="$PROJECT_DIR$/API/Extensions/SwaggerServiceExtensions.cs" />
-        <option value="$PROJECT_DIR$/Domain/Quiz.cs" />
         <option value="$PROJECT_DIR$/Aplication/Interfaces/IRandomStringGenerator.cs" />
         <option value="$PROJECT_DIR$/Aplication/Helpers/RamdomStringHelper.cs" />
         <option value="$PROJECT_DIR$/Aplication/Helpers/RamdomStringGeneratorHelper.cs" />
@@ -100,27 +100,32 @@
         <option value="$PROJECT_DIR$/Application/Helpers/RamdomStringGeneratorHelper.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/IRandomStringGenerator.cs" />
         <option value="$PROJECT_DIR$/Application/Application.csproj" />
-        <option value="$PROJECT_DIR$/Application/Helpers/CustomMapper.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/ICustomMapper.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/IEmailSender.cs" />
         <option value="$PROJECT_DIR$/Application/Quiz/CreateQuiz.cs" />
         <option value="$PROJECT_DIR$/Application/Quiz/EditQuiz.cs" />
-        <option value="$PROJECT_DIR$/Application/Dtos/QuizDto.cs" />
-        <option value="$PROJECT_DIR$/Application/Helpers/UploadFilesHelper.cs" />
-        <option value="$PROJECT_DIR$/Application/Interfaces/IUploadFiles.cs" />
         <option value="$PROJECT_DIR$/API/appsettings.json" />
         <option value="$PROJECT_DIR$/Application/Question/CreateQuestions.cs" />
-        <option value="$PROJECT_DIR$/Application/Dtos/QuestionDto.cs" />
         <option value="$PROJECT_DIR$/Application/Quizzes/CreateQuiz.cs" />
         <option value="$PROJECT_DIR$/Application/Quizzes/EditQuiz.cs" />
-        <option value="$PROJECT_DIR$/API/Controllers/QuizController.cs" />
         <option value="$PROJECT_DIR$/Application/Helpers/DocumentsHelper.cs" />
         <option value="$PROJECT_DIR$/Application/Interfaces/IDocumentsUrl.cs" />
         <option value="$PROJECT_DIR$/Application/Helpers/DocumentsUrlHelper.cs" />
         <option value="$PROJECT_DIR$/API/Extensions/ApplicationServicesExtensions.cs" />
-        <option value="$PROJECT_DIR$/Application/Questions/CreateQuestions.cs" />
+        <option value="$PROJECT_DIR$/Application/Dtos/OptionDto.cs" />
         <option value="$PROJECT_DIR$/API/Startup.cs" />
+        <option value="$PROJECT_DIR$/Application/Helpers/CustomMapper.cs" />
+        <option value="$PROJECT_DIR$/Application/Interfaces/IUploadFiles.cs" />
+        <option value="$PROJECT_DIR$/Application/Helpers/UploadFilesHelper.cs" />
+        <option value="$PROJECT_DIR$/Application/Questions/CreateQuestions.cs" />
         <option value="$PROJECT_DIR$/API/Controllers/QuestionsController.cs" />
+        <option value="$PROJECT_DIR$/Application/Questions/EditQuestion.cs" />
+        <option value="$PROJECT_DIR$/Domain/Question.cs" />
+        <option value="$PROJECT_DIR$/Domain/Quiz.cs" />
+        <option value="$PROJECT_DIR$/API/Controllers/QuizController.cs" />
+        <option value="$PROJECT_DIR$/Application/Dtos/QuestionDto.cs" />
+        <option value="$PROJECT_DIR$/Application/Dtos/QuizDto.cs" />
+        <option value="$PROJECT_DIR$/Application/Quizzes/GetQuizByToken.cs" />
       </list>
     </option>
   </component>
@@ -192,7 +197,8 @@
       <workItem from="1614427043805" duration="17171000" />
       <workItem from="1614449389523" duration="3573000" />
       <workItem from="1614502185232" duration="27806000" />
-      <workItem from="1614553494247" duration="20504000" />
+      <workItem from="1614553494247" duration="20576000" />
+      <workItem from="1614610653703" duration="22200000" />
     </task>
     <task id="LOCAL-00001" summary="create api structure">
       <created>1614277830450</created>
@@ -229,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614556184186</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adds add question endpoint">
+      <created>1614576052971</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1614576052984</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,113 +270,114 @@
     <MESSAGE value="Adds Database Models, Api Extenxins, Seeds for Categories and InputTypes" />
     <MESSAGE value="Adds Create Quiz endpoint" />
     <MESSAGE value="Adds Edit Quiz endpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds Edit Quiz endpoint" />
+    <MESSAGE value="Adds add question endpoint" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adds add question endpoint" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1614276466379">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1614276466379" />
-    <state width="400" height="438" key="DebuggerActiveHint" timestamp="1614575290577">
+    <state width="463" height="438" key="DebuggerActiveHint" timestamp="1614627520907">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="400" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1614575290577" />
-    <state width="1323" height="250" key="GridCell.Tab.0.bottom" timestamp="1614575347889">
+    <state width="463" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1614627520907" />
+    <state width="1323" height="250" key="GridCell.Tab.0.bottom" timestamp="1614627618308">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614575347889" />
-    <state width="1323" height="250" key="GridCell.Tab.0.center" timestamp="1614575347888">
+    <state width="1323" height="250" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614627618308" />
+    <state width="1323" height="250" key="GridCell.Tab.0.center" timestamp="1614627618307">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1614575347888" />
-    <state width="1323" height="250" key="GridCell.Tab.0.left" timestamp="1614575347888">
+    <state width="1323" height="250" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1614627618307" />
+    <state width="1323" height="250" key="GridCell.Tab.0.left" timestamp="1614627618307">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1614575347888" />
-    <state width="1323" height="250" key="GridCell.Tab.0.right" timestamp="1614575347889">
+    <state width="1323" height="250" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1614627618307" />
+    <state width="1323" height="250" key="GridCell.Tab.0.right" timestamp="1614627618308">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1614575347889" />
-    <state width="1323" height="250" key="GridCell.Tab.1.bottom" timestamp="1614575369587">
+    <state width="1323" height="250" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1614627618308" />
+    <state width="1323" height="250" key="GridCell.Tab.1.bottom" timestamp="1614627618309">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614575369587" />
-    <state width="1323" height="250" key="GridCell.Tab.1.center" timestamp="1614575369587">
+    <state width="1323" height="250" key="GridCell.Tab.1.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614627618309" />
+    <state width="1323" height="250" key="GridCell.Tab.1.center" timestamp="1614627618308">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1614575369587" />
-    <state width="1323" height="250" key="GridCell.Tab.1.left" timestamp="1614575369586">
+    <state width="1323" height="250" key="GridCell.Tab.1.center/0.0.1366.728@0.0.1366.728" timestamp="1614627618308" />
+    <state width="1323" height="250" key="GridCell.Tab.1.left" timestamp="1614627618308">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1614575369586" />
-    <state width="1323" height="250" key="GridCell.Tab.1.right" timestamp="1614575369587">
+    <state width="1323" height="250" key="GridCell.Tab.1.left/0.0.1366.728@0.0.1366.728" timestamp="1614627618308" />
+    <state width="1323" height="250" key="GridCell.Tab.1.right" timestamp="1614627618309">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1614575369587" />
-    <state width="1323" height="250" key="GridCell.Tab.2.bottom" timestamp="1614575347169">
+    <state width="1323" height="250" key="GridCell.Tab.1.right/0.0.1366.728@0.0.1366.728" timestamp="1614627618309" />
+    <state width="1323" height="250" key="GridCell.Tab.2.bottom" timestamp="1614627618310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614575347169" />
-    <state width="1323" height="250" key="GridCell.Tab.2.center" timestamp="1614575347168">
+    <state width="1323" height="250" key="GridCell.Tab.2.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614627618310" />
+    <state width="1323" height="250" key="GridCell.Tab.2.center" timestamp="1614627618309">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1614575347168" />
-    <state width="1323" height="250" key="GridCell.Tab.2.left" timestamp="1614575347168">
+    <state width="1323" height="250" key="GridCell.Tab.2.center/0.0.1366.728@0.0.1366.728" timestamp="1614627618309" />
+    <state width="1323" height="250" key="GridCell.Tab.2.left" timestamp="1614627618309">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1614575347168" />
-    <state width="1323" height="250" key="GridCell.Tab.2.right" timestamp="1614575347169">
+    <state width="1323" height="250" key="GridCell.Tab.2.left/0.0.1366.728@0.0.1366.728" timestamp="1614627618309" />
+    <state width="1323" height="250" key="GridCell.Tab.2.right" timestamp="1614627618309">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1614575347169" />
-    <state width="1323" height="250" key="GridCell.Tab.3.bottom" timestamp="1614575347171">
+    <state width="1323" height="250" key="GridCell.Tab.2.right/0.0.1366.728@0.0.1366.728" timestamp="1614627618309" />
+    <state width="1323" height="250" key="GridCell.Tab.3.bottom" timestamp="1614627618310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614575347171" />
-    <state width="1323" height="250" key="GridCell.Tab.3.center" timestamp="1614575347170">
+    <state width="1323" height="250" key="GridCell.Tab.3.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614627618310" />
+    <state width="1323" height="250" key="GridCell.Tab.3.center" timestamp="1614627618310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1614575347170" />
-    <state width="1323" height="250" key="GridCell.Tab.3.left" timestamp="1614575347169">
+    <state width="1323" height="250" key="GridCell.Tab.3.center/0.0.1366.728@0.0.1366.728" timestamp="1614627618310" />
+    <state width="1323" height="250" key="GridCell.Tab.3.left" timestamp="1614627618310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1614575347169" />
-    <state width="1323" height="250" key="GridCell.Tab.3.right" timestamp="1614575347170">
+    <state width="1323" height="250" key="GridCell.Tab.3.left/0.0.1366.728@0.0.1366.728" timestamp="1614627618310" />
+    <state width="1323" height="250" key="GridCell.Tab.3.right" timestamp="1614627618310">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1614575347170" />
-    <state width="1323" height="250" key="GridCell.Tab.4.bottom" timestamp="1614575347172">
+    <state width="1323" height="250" key="GridCell.Tab.3.right/0.0.1366.728@0.0.1366.728" timestamp="1614627618310" />
+    <state width="1323" height="250" key="GridCell.Tab.4.bottom" timestamp="1614627618311">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.4.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614575347172" />
-    <state width="1323" height="250" key="GridCell.Tab.4.center" timestamp="1614575347171">
+    <state width="1323" height="250" key="GridCell.Tab.4.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614627618311" />
+    <state width="1323" height="250" key="GridCell.Tab.4.center" timestamp="1614627618311">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.4.center/0.0.1366.728@0.0.1366.728" timestamp="1614575347171" />
-    <state width="1323" height="250" key="GridCell.Tab.4.left" timestamp="1614575347171">
+    <state width="1323" height="250" key="GridCell.Tab.4.center/0.0.1366.728@0.0.1366.728" timestamp="1614627618311" />
+    <state width="1323" height="250" key="GridCell.Tab.4.left" timestamp="1614627618311">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.4.left/0.0.1366.728@0.0.1366.728" timestamp="1614575347171" />
-    <state width="1323" height="250" key="GridCell.Tab.4.right" timestamp="1614575347172">
+    <state width="1323" height="250" key="GridCell.Tab.4.left/0.0.1366.728@0.0.1366.728" timestamp="1614627618311" />
+    <state width="1323" height="250" key="GridCell.Tab.4.right" timestamp="1614627618311">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.4.right/0.0.1366.728@0.0.1366.728" timestamp="1614575347172" />
+    <state width="1323" height="250" key="GridCell.Tab.4.right/0.0.1366.728@0.0.1366.728" timestamp="1614627618311" />
     <state x="275" y="95" key="Rider.ProjectTemplateDialog.Size" timestamp="1614276288112">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="95" key="Rider.ProjectTemplateDialog.Size/0.0.1366.728@0.0.1366.728" timestamp="1614276288112" />
-    <state x="393" y="41" key="RiderGenerateDialog" timestamp="1614561019556">
+    <state x="393" y="41" key="RiderGenerateDialog" timestamp="1614710684051">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="393" y="41" key="RiderGenerateDialog/0.0.1366.728@0.0.1366.728" timestamp="1614561019556" />
+    <state x="393" y="41" key="RiderGenerateDialog/0.0.1366.728@0.0.1366.728" timestamp="1614710684051" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1614276609997">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="184" y="8" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1614276609997" />
-    <state width="498" height="457" key="SwitcherDM" timestamp="1614568394450">
+    <state width="498" height="457" key="SwitcherDM" timestamp="1614720526313">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="498" height="457" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1614568394450" />
+    <state width="498" height="457" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1614720526313" />
     <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1614556281829">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -397,17 +411,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/API/Controllers/QuestionsController.cs</url>
-          <line>17</line>
-          <properties documentPath="C:\Users\Jossias Mupandza\Documents\GitHub\bu-chanllege\chanllege-api\API\Controllers\QuestionsController.cs" initialLine="19">
+          <url>file://$PROJECT_DIR$/Application/Questions/CreateQuestions.cs</url>
+          <line>60</line>
+          <properties documentPath="C:\Users\Jossias Mupandza\Documents\GitHub\bu-chanllege\chanllege-api\Application\Questions\CreateQuestions.cs" initialLine="60">
             <startOffsets>
-              <option value="569" />
+              <option value="2270" />
             </startOffsets>
             <endOffsets>
-              <option value="570" />
+              <option value="2271" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

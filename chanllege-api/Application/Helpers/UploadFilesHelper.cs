@@ -65,7 +65,12 @@ namespace Application.Helpers
 
             return document;
         }
-        
+
+        public async Task RemoveDocuments(Domain.Document document)
+        {
+            Console.WriteLine(document.Name + "Removed!");
+        }
+
         public static string MakeBase64UrlSafe(string input)
         {
             return input.TrimEnd('=').Replace('+', '-').Replace('/', '_');

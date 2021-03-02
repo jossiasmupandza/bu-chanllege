@@ -7,5 +7,6 @@ namespace Application.Interfaces
     public interface IUploadFiles
     {
         Task<Domain.Document> UploadDocuments(IFormFile file);
+        Task RemoveDocuments(Domain.Document document);
     }
 }

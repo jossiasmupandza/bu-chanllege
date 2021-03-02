@@ -12,8 +12,8 @@ namespace Domain
         public bool Required { get; set; }
         public bool MultipleOptions { get; set; }
         public Quiz Quiz { get; set; }
-        public InputType InputType { get; set; }
-        public ICollection<Document> Documents { get; set; } = new List<Document>();
-        public ICollection<Option> Options { get; set; } = new List<Option>();
+        public virtual InputType InputType { get; set; }
+        public virtual ICollection<Document> Documents { get; set; } = new List<Document>();
+        public virtual ICollection<Option> Options { get; set; } = new List<Option>();
     }
 }

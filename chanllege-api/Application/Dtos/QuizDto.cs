@@ -19,7 +19,7 @@ namespace Application.Dtos
         public string Category { get; set; }
         public string CreatorFullName { get; set; }
         public int CreatorId { get; set; }
-        public List<Domain.Question> Questions { get; set; } = new List<Domain.Question>();
+        public List<QuestionDto> Questions { get; set; } = new List<QuestionDto>();
         public List<Solution> Solutions { get; set; } = new List<Solution>();
     }
 }
