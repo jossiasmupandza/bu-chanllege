@@ -27,7 +27,6 @@ namespace Persistence
 
         public DbSet<Answer> Answers { get; set; }
         public DbSet<AnswerOption> AnswerOptions  { get; set; }
-        public DbSet<AnswerQuestion> AnswerQuestions { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Document> Documents { get; set; }
         public DbSet<InputType> InputTypes { get; set; }

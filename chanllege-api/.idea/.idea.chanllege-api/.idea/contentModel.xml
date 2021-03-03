@@ -17,6 +17,7 @@
           <e p="BaseController.cs" t="Include" />
           <e p="QuestionsController.cs" t="Include" />
           <e p="QuizController.cs" t="Include" />
+          <e p="SolutionController.cs" t="Include" />
           <e p="tsconfig.json" t="Include" />
         </e>
         <e p="Extensions" t="Include">
@@ -47,9 +48,11 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Categories" t="Include" />
         <e p="Dtos" t="Include">
+          <e p="AnswerOptionsDto.cs" t="Include" />
           <e p="OptionDto.cs" t="Include" />
           <e p="QuestionDto.cs" t="Include" />
           <e p="QuizDto.cs" t="Include" />
+          <e p="SolutionDto.cs" t="Include" />
         </e>
         <e p="Errors" t="Include">
           <e p="ApiException.cs" t="Include" />
@@ -87,12 +90,14 @@
           <e p="GetQuizByToken.cs" t="Include" />
           <e p="GetQuizzes.cs" t="Include" />
         </e>
+        <e p="Solutions" t="Include">
+          <e p="CreateSolution.cs" t="Include" />
+        </e>
       </e>
       <e p="chanllege-api.sln" t="IncludeFlat" />
       <e p="Domain" t="IncludeRecursive">
         <e p="Answer.cs" t="Include" />
         <e p="AnswerOption.cs" t="Include" />
-        <e p="AnswerQuestion.cs" t="Include" />
         <e p="AppUser.cs" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Category.cs" t="Include" />
@@ -139,6 +144,10 @@
           <e p="20210228134604_AddPublicFlags.Designer.cs" t="Include" />
           <e p="20210228155630_AddNotificationEmail.cs" t="Include" />
           <e p="20210228155630_AddNotificationEmail.Designer.cs" t="Include" />
+          <e p="20210302222116_ChangesRelationshipAnswerQuestion.cs" t="Include" />
+          <e p="20210302222116_ChangesRelationshipAnswerQuestion.Designer.cs" t="Include" />
+          <e p="20210303010901_UpdateColunsAnswerOptions.cs" t="Include" />
+          <e p="20210303010901_UpdateColunsAnswerOptions.Designer.cs" t="Include" />
           <e p="DataContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">

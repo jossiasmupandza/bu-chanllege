@@ -32,8 +32,8 @@ namespace Application.Quizzes
             {
                 RuleFor(x => x.QuizId).NotEmpty();
                 RuleFor(x => x.Title).NotEmpty();
-                RuleFor(x => x.PublicQuiz).NotEmpty();
-                RuleFor(x => x.PublicAnswer).NotEmpty();
+                RuleFor(x => x.PublicQuiz);
+                RuleFor(x => x.PublicAnswer);
                 RuleFor(x => x.CategoryId).NotEmpty();
             }
 

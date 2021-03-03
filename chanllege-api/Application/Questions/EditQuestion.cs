@@ -35,8 +35,8 @@ namespace Application.Questions
             public EditQuestionCommaandValidator()
             {
                 RuleFor(x => x.QuestionId).NotEmpty();
-                RuleFor(x => x.Required).NotEmpty();
-                RuleFor(x => x.MultipleOptions).NotEmpty();
+                RuleFor(x => x.Required);
+                RuleFor(x => x.MultipleOptions);
                 RuleFor(x => x.InputTypeId).NotEmpty();
                 RuleFor(x => x.Title).NotEmpty();
             }
@@ -163,6 +163,8 @@ namespace Application.Questions
                             }
                         }
                     }
+
+                    await transaction.CommitAsync();
                     
                     return new QuestionDto
                     {
