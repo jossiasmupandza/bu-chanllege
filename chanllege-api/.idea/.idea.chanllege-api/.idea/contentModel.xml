@@ -15,6 +15,7 @@
         </e>
         <e p="Controllers" t="Include">
           <e p="BaseController.cs" t="Include" />
+          <e p="CategoriesController.cs" t="Include" />
           <e p="QuestionsController.cs" t="Include" />
           <e p="QuizController.cs" t="Include" />
           <e p="SolutionController.cs" t="Include" />
@@ -46,7 +47,10 @@
       <e p="Application" t="IncludeRecursive">
         <e p="Application.csproj" t="IncludeRecursive" />
         <e p="bin" t="ExcludeRecursive" />
-        <e p="Categories" t="Include" />
+        <e p="Categories" t="Include">
+          <e p="CreateCategory.cs" t="Include" />
+          <e p="GetCategories.cs" t="Include" />
+        </e>
         <e p="Dtos" t="Include">
           <e p="AnswerOptionsDto.cs" t="Include" />
           <e p="OptionDto.cs" t="Include" />
@@ -92,6 +96,7 @@
         </e>
         <e p="Solutions" t="Include">
           <e p="CreateSolution.cs" t="Include" />
+          <e p="GetSolutionByToken.cs" t="Include" />
         </e>
       </e>
       <e p="chanllege-api.sln" t="IncludeFlat" />

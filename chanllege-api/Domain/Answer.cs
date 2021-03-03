@@ -10,5 +10,6 @@ namespace Domain
         public Solution Solution { get; set; }
         public Question Question { get; set; }
         public virtual ICollection<Option> Options { get; set; } = new List<Option>();
+        public ICollection<AnswerOption> AnswerOptions { get; set; }
     }
 }

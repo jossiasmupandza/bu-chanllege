@@ -13,5 +13,11 @@ namespace API.Controllers
         {
             return await Mediator.Send(command);
         }
+
+        [HttpGet("{token}")]
+        public async Task<List<object>> GetTSolutions(string token)
+        {
+            return await Mediator.Send(new GetSolutions.GetSolutionBytokenQuery{Token = token});
+        }
     }
 }
