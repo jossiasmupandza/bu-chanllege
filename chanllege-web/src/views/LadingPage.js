@@ -18,7 +18,7 @@ import {Link} from "react-router-dom";
 
 
 export default function LadingPage(props) {
-    const [collapsed, setCollapsed] = useState(true);
+    const [collapsed, setCollapsed] = useState(false);
     const toggleNavbar = () => setCollapsed(!collapsed);
 
     return (
@@ -47,7 +47,7 @@ export default function LadingPage(props) {
                                         <span>Crie, edite e partilhe seus inquéritos de forma pratica</span>
                                     </h1>
                                     <p className="lead text-white">
-                                        Não perca tempo, crie seu inquérito ou responda  a pesquisas privada ou públicas. Basta um clique. 😊
+                                        Não perca tempo, crie seu inquérito ou participe de pesquisas privadas ou públicas. Basta um clique. 😊
                                     </p>
                                     <div className="btn-wrapper">
                                         <Button
@@ -65,7 +65,7 @@ export default function LadingPage(props) {
                                             className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
                                             color="default"
                                             tag={Link}
-                                            to="/criar"
+                                            to="/create-quiz"
                                         >
                                           <span className="btn-inner--icon mr-1">
                                             <i className="fa fa-file-o" />
@@ -101,26 +101,29 @@ export default function LadingPage(props) {
             </div>
             <Container>
                 <Row>
-                    <span className="display-4 mt-5 mb-5">Responda Um Inquérito Publico e Contribua Numa Pesquisa Científica</span>
+                    <span className="display-4 mt-5 mb-5">Responda Um Inquérito Público e Contribua Numa Pesquisa Social</span>
                 </Row>
                 <Row>
                     <Col sm={4}>
                         <Navbar color="faded" light>
-                            <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
+                            <NavbarBrand className="mr-auto">Categorias</NavbarBrand>
                             <NavbarToggler onClick={toggleNavbar} className="mr-2" />
                             <Collapse isOpen={!collapsed} navbar>
                                 <Nav navbar>
                                     <NavItem>
-                                        <NavLink href="/components/">Components</NavLink>
+                                        <NavLink href="#">Inteligencia Artificial</NavLink>
                                     </NavItem>
                                     <NavItem>
-                                        <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                                        <NavLink href="#">GitHub</NavLink>
                                     </NavItem>
                                 </Nav>
                             </Collapse>
                         </Navbar>
                     </Col>
                     <Col sm={8}>
+                        <Row className="mt-4 mb-3">
+                            <h4>Inteligencia Artificial</h4>
+                        </Row>
                         <Card className="shadow shadow-lg--hover mb-5">
                             <CardBody>
                                 <div className="d-flex px-3">
@@ -137,6 +140,9 @@ export default function LadingPage(props) {
                                             The Arctic Ocean freezes every winter and much of
                                             the sea-ice then thaws every summer, and that
                                             process will continue whatever.
+                                        </p>
+                                        <p className="text-blue">
+                                            Código do inquérito: <span className="text-default">quiz-flwkjfwfwjhniwcwnckw</span>
                                         </p>
                                         <a
                                             className="text-success"

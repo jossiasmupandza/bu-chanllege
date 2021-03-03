@@ -9,9 +9,10 @@ import "assets/scss/argon-design-system-react.scss?v1.1.0";
 // //import Index from "src/template/Index.js";
 // import Landing from "src/template/examples/Landing.js";
 // import Login from "src/template/examples/Login.js";
-// import Profile from "src/template/examples/Profile.js";
+//import Profile from "./template/examples/Profile";
 // import Register from "src/template/examples/Register.js";
 import LadingPage from "./views/LadingPage.js";
+import CreateQuiz from "./views/CreateQuiz";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -21,6 +22,11 @@ ReactDOM.render(
           exact
           render={props => <LadingPage {...props} />}
       />
+        <Route
+            path="/create-quiz"
+            exact
+            render={props => <CreateQuiz {...props} />}
+        />
       {/*<Route*/}
       {/*  path="/landing-page"*/}
       {/*  exact*/}
