@@ -1,10 +1,26 @@
-import React from "react";
+import React, {useState} from "react";
 import MainLayout from "../layouts/MainLayout";
-import {Button, Col, Container, Row} from "reactstrap";
+import {Button,
+    Card,
+    CardBody,
+    Col,
+    Container,
+    Row,
+    Collapse,
+    Navbar,
+    NavbarToggler,
+    NavbarBrand,
+    Nav,
+    NavItem,
+    NavLink
+} from "reactstrap";
 import {Link} from "react-router-dom";
 
 
 export default function LadingPage(props) {
+    const [collapsed, setCollapsed] = useState(true);
+    const toggleNavbar = () => setCollapsed(!collapsed);
+
     return (
         <MainLayout>
             <div className="position-relative">
@@ -83,6 +99,59 @@ export default function LadingPage(props) {
                 </section>
                 {/* 1st Hero Variation */}
             </div>
+            <Container>
+                <Row>
+                    <span className="display-4 mt-5 mb-5">Responda Um Inquérito Publico e Contribua Numa Pesquisa Científica</span>
+                </Row>
+                <Row>
+                    <Col sm={4}>
+                        <Navbar color="faded" light>
+                            <NavbarBrand href="/" className="mr-auto">reactstrap</NavbarBrand>
+                            <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+                            <Collapse isOpen={!collapsed} navbar>
+                                <Nav navbar>
+                                    <NavItem>
+                                        <NavLink href="/components/">Components</NavLink>
+                                    </NavItem>
+                                    <NavItem>
+                                        <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                                    </NavItem>
+                                </Nav>
+                            </Collapse>
+                        </Navbar>
+                    </Col>
+                    <Col sm={8}>
+                        <Card className="shadow shadow-lg--hover mb-5">
+                            <CardBody>
+                                <div className="d-flex px-3">
+                                    <div>
+                                        <div className="icon icon-shape bg-gradient-success rounded-circle text-white">
+                                            <i className="ni ni-satisfied" />
+                                        </div>
+                                    </div>
+                                    <div className="pl-4">
+                                        <h5 className="title text-success">
+                                            Inteligencia artificial ameca empregos de desenvolvedores
+                                        </h5>
+                                        <p>
+                                            The Arctic Ocean freezes every winter and much of
+                                            the sea-ice then thaws every summer, and that
+                                            process will continue whatever.
+                                        </p>
+                                        <a
+                                            className="text-success"
+                                            href="#pablo"
+                                            onClick={e => e.preventDefault()}
+                                        >
+                                            Aceder  Inquérito
+                                        </a>
+                                    </div>
+                                </div>
+                            </CardBody>
+                        </Card>
+                    </Col>
+                </Row>
+            </Container>
         </MainLayout>
     )
 }
