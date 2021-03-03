@@ -1,2 +1,2 @@
 # bu-chanllege
- A web aplication that creates custom dinamic surveis
+ A web aplication that creates custom dinamic survys
