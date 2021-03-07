@@ -30,7 +30,7 @@ export default function CreateQuiz() {
     }
 
     return(
-        <CardLayout title="Criar Inquérito">
+        <CardLayout card title="Criar Inquérito">
             <Col sm={12}>
                 <AvForm onValidSubmit={handleSubmit}>
                     <Row>
