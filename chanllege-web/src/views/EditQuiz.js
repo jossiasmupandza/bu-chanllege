@@ -1,20 +1,40 @@
 import React, {useEffect, useState} from "react";
-import {useSelector} from "react-redux";
-import { AvForm, AvField, AvCheckboxGroup, AvCheckbox } from "availity-reactstrap-validation";
-import {Button, Card, Modal, ModalBody, ModalFooter, ModalHeader, Row, Col } from "reactstrap";
+import {useDispatch, useSelector} from "react-redux";
+import {Button, Card, Modal, ModalBody, ModalFooter, ModalHeader, Row,Spinner, Col } from "reactstrap";
 import CardLayout from "../layouts/CardLayout";
+import {getInputTypes} from "../store/actions/inputTypes.action";
+import Question from "../components/Generic/Question";
 
 export default function EditQuiz() {
     const [modal, setModal] = useState(false);
+    const dispatch = useDispatch();
 
-    const showQuizCodes = useSelector(state => state.settings.showQuizCodes)
+    const showQuizCodes = useSelector(state => state.settings.showQuizCodes);
+    const inputs = useSelector(state => state.inputType.inputs);
+    const isLoading = useSelector(state => state.inputType.isLoading);
+
+    console.log(inputs);
 
     useEffect(()=> {
+        dispatch(getInputTypes());
+
         if(showQuizCodes)
             toggle();
     }, []);
 
     const toggle = () => setModal(!modal);
+
+    if(isLoading) {
+        return (
+          <CardLayout
+            headerTitle="Carregando..."
+          >
+              <Card className="card-profile shadow mt--300 px-5 py-4">
+                  <Spinner color="primary" size="lg"/>
+              </Card>
+          </CardLayout>
+        );
+    }
 
     return (
         <CardLayout
@@ -35,41 +55,7 @@ export default function EditQuiz() {
                 </Row>
             </Card>
 
-            <Card className=" shadow px-5 py-4 my-4">
-                <AvForm>
-                    <Row>
-                        <Col md={6}>
-                            <AvField
-                                label="Questão"
-                                type="text"
-                                name="title"
-                                required
-                                placeholder="Exemplo?"
-                                validate={{
-                                    required: {
-                                        errorMessage: "Campo Obrigatório.",
-                                    }
-                                }}
-                            />
-                        </Col>
-                        <Col md={6}>
-                            <AvField label="Formato da Resposta" type="select" name="category">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </AvField>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <AvCheckboxGroup name="checkboxExample" label="Resposta Obrigatória">
-                            <AvCheckbox label="Bulbasaur" value="Bulbasaur" />
-                        </AvCheckboxGroup>
-                    </Row>
-                </AvForm>
-            </Card>
-
+            <Question inputs={inputs}/>
 
             <Row className="justify-content-end mt-3 mb-4 px-3">
                 <Button color="primary">Adicionar Questão</Button>

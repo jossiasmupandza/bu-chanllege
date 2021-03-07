@@ -16,6 +16,7 @@
         <e p="Controllers" t="Include">
           <e p="BaseController.cs" t="Include" />
           <e p="CategoriesController.cs" t="Include" />
+          <e p="InputTypesController.cs" t="Include" />
           <e p="QuestionsController.cs" t="Include" />
           <e p="QuizController.cs" t="Include" />
           <e p="SolutionController.cs" t="Include" />
@@ -69,6 +70,9 @@
           <e p="DocumentsUrlHelper.cs" t="Include" />
           <e p="RamdomStringGeneratorHelper.cs" t="Include" />
           <e p="UploadFilesHelper.cs" t="Include" />
+        </e>
+        <e p="InputTypes" t="Include">
+          <e p="GetInputTypes.cs" t="Include" />
         </e>
         <e p="Interfaces" t="Include">
           <e p="ICustomMapper.cs" t="Include" />

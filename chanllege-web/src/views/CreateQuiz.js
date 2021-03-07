@@ -1,4 +1,4 @@
-import React, from "react";
+import React from "react";
 import {useHistory} from "react-router-dom";
 import { AvForm, AvField, AvRadioGroup, AvRadio } from "availity-reactstrap-validation";
 import swal from '@sweetalert/with-react';

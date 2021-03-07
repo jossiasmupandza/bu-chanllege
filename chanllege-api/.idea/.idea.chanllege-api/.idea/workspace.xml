@@ -25,7 +25,24 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="970cfdf2-008a-453f-993c-5abb5838e619" name="Default Changelist" comment="adds categories endpoints" />
+    <list default="true" id="970cfdf2-008a-453f-993c-5abb5838e619" name="Default Changelist" comment="adds categories endpoints">
+      <change afterPath="$PROJECT_DIR$/API/Controllers/InputTypesController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Application/InputTypes/GetInputTypes.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chanllege-web/src/components/Generic/Question.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chanllege-web/src/store/actions/inputTypes.action.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chanllege-web/src/store/reducers/inputTypes.reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/obj/Debug/netcoreapp3.1/API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/Debug/netcoreapp3.1/API.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Persistence/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Persistence/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chanllege-web/src/helpers/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chanllege-web/src/helpers/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chanllege-web/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chanllege-web/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chanllege-web/src/views/CreateQuiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chanllege-web/src/views/CreateQuiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chanllege-web/src/views/EditQuiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chanllege-web/src/views/EditQuiz.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,8 +69,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Aplication/Helpers/CustomMapper.cs" />
-        <option value="$PROJECT_DIR$/Aplication/Dtos/QuizDto.cs" />
         <option value="$PROJECT_DIR$/API/Controllers/QuizControler.cs" />
         <option value="$PROJECT_DIR$/API/Controllers/BaseController.cs" />
         <option value="$PROJECT_DIR$/Aplication/Quiz/CreateQuiz.cs" />
@@ -103,6 +118,8 @@
         <option value="$PROJECT_DIR$/Application/Categories/CreateCategory.cs" />
         <option value="$PROJECT_DIR$/Application/Categories/GetCategories.cs" />
         <option value="$PROJECT_DIR$/API/Controllers/CategoriesController.cs" />
+        <option value="$PROJECT_DIR$/Application/InputTypes/GetInputTypes.cs" />
+        <option value="$PROJECT_DIR$/API/Controllers/InputTypesController.cs" />
       </list>
     </option>
   </component>
@@ -176,6 +193,7 @@
       <workItem from="1614502185232" duration="27806000" />
       <workItem from="1614553494247" duration="20576000" />
       <workItem from="1614610653703" duration="39825000" />
+      <workItem from="1615124884357" duration="3610000" />
     </task>
     <task id="LOCAL-00001" summary="create api structure">
       <created>1614277830450</created>
@@ -291,22 +309,22 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="500" height="438" key="DebuggerActiveHint/0.0.1366.728@0.0.1366.728" timestamp="1614733473709" />
-    <state width="1323" height="250" key="GridCell.Tab.0.bottom" timestamp="1614739979690">
+    <state width="1323" height="570" key="GridCell.Tab.0.bottom" timestamp="1615126767870">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1614739979690" />
-    <state width="1323" height="250" key="GridCell.Tab.0.center" timestamp="1614739979689">
+    <state width="1323" height="570" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1615126767870" />
+    <state width="1323" height="570" key="GridCell.Tab.0.center" timestamp="1615126767869">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1614739979689" />
-    <state width="1323" height="250" key="GridCell.Tab.0.left" timestamp="1614739979689">
+    <state width="1323" height="570" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1615126767869" />
+    <state width="1323" height="570" key="GridCell.Tab.0.left" timestamp="1615126767868">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1614739979689" />
-    <state width="1323" height="250" key="GridCell.Tab.0.right" timestamp="1614739979689">
+    <state width="1323" height="570" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1615126767868" />
+    <state width="1323" height="570" key="GridCell.Tab.0.right" timestamp="1615126767869">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="250" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1614739979689" />
+    <state width="1323" height="570" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1615126767869" />
     <state width="1323" height="250" key="GridCell.Tab.1.bottom" timestamp="1614739979691">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -375,10 +393,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="95" key="Rider.ProjectTemplateDialog.Size/0.0.1366.728@0.0.1366.728" timestamp="1614276288112" />
-    <state x="393" y="41" key="RiderGenerateDialog" timestamp="1614738853228">
+    <state x="393" y="41" key="RiderGenerateDialog" timestamp="1615126457659">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="393" y="41" key="RiderGenerateDialog/0.0.1366.728@0.0.1366.728" timestamp="1614738853228" />
+    <state x="393" y="41" key="RiderGenerateDialog/0.0.1366.728@0.0.1366.728" timestamp="1615126457659" />
     <state x="184" y="8" key="SettingsEditor" timestamp="1614276609997">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

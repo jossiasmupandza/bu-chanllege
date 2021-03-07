@@ -11,11 +11,13 @@ import "assets/scss/argon-design-system-react.scss?v1.1.0";
 import Routes from "./routes";
 import loginReducer from "./store/reducers/login.reducer";
 import settingsReducer from "./store/reducers/settings.reducer";
+import inputTypesReducer from "./store/reducers/inputTypes.reducer";
 
 
 const rootReducer = combineReducers({
     login: loginReducer,
-    settings: settingsReducer
+    settings: settingsReducer,
+    inputType: inputTypesReducer
 })
 
 export const store = createStore(rootReducer, applyMiddleware(thunk));
