@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {Button, Card, Modal, ModalBody, ModalFooter, ModalHeader, Row,Spinner, Col } from "reactstrap";
+import {Button, Card, Modal, ModalBody, ModalFooter, ModalHeader, Row,Spinner, Col, Container, UncontrolledTooltip} from "reactstrap";
 import CardLayout from "../layouts/CardLayout";
 import {getInputTypes} from "../store/actions/inputTypes.action";
 import Question from "../components/Generic/Question";
@@ -9,6 +9,7 @@ import {addElementInArray} from "../store/actions/questions.action";
 export default function EditQuiz() {
     const [modal, setModal] = useState(false);
     const [showButtons, setShowButtons] = useState(true);
+    const [showLinks, setShowLinks] = useState(false);
     const dispatch = useDispatch();
 
     const showQuizCodes = useSelector(state => state.settings.showQuizCodes);
@@ -16,7 +17,6 @@ export default function EditQuiz() {
     const isLoading = useSelector(state => state.inputType.isLoading);
     const questions = useSelector(state => state.question.questions);
 
-    console.log(inputs);
 
     useEffect(()=> {
         dispatch(getInputTypes());
@@ -29,6 +29,10 @@ export default function EditQuiz() {
 
     const toggleShowButtons = () => {
         setShowButtons(!showButtons);
+    }
+
+    const toggleShowLinks = () => {
+        setShowLinks(!showLinks);
     }
 
     const addQuestionHandler = () => {
@@ -62,6 +66,37 @@ export default function EditQuiz() {
                         <p className="text-light"><pan className="text-dark">Descrição:</pan> dsddsd</p>
                         <p className="text-light"><pan className="text-dark">Tipo de Inquérito:</pan>privado</p>
                         <p className="text-light"><pan className="text-dark">Tipo de Respostas:</pan>privado</p>
+
+                        <Button className="mb-3 mt-3" onClick={toggleShowLinks}>Links...</Button>
+                        {
+                            showLinks &&
+                            <>
+                                <h5>Link do Inquérito</h5>
+                                <p>Partilhe este link com o seu publico alvo, para obter respostas.</p>
+
+                                <LinkArea link={"http://pesquisaapp.com/quiz-dlwkdnqndjqnd"}/>
+
+                                <Col className="text-center">
+                                    Ou partilhe o código abaixo para aceder através do site
+                                </Col>
+
+                                <LinkArea link={"quiz-dlwkdnqndjqnd"}/>
+
+                                <br/>
+                                <h5>Link de Proprietário</h5>
+                                <p>Use Este link para editar o seu Inquérito e visualizar as respostas enviadas pêlos seus inquiridos.
+                                    <span className="text-danger">(Nota: caso perca esse link não terá como aceder ao seu inquérito ).</span></p>
+
+                                <LinkArea link={"http://pesquisaapp.com/edit-wweerrtttyyys"}/>
+
+                                <Col className="text-center">
+                                    Ou utilize o código abaixo para aceder através do site
+                                </Col>
+
+                                <LinkArea link={"edit-wweerrtttyyys"}/>
+                            </>
+                        }
+
                         <p className="text-light">Passo 2 de 2</p>
                     </Col>
                 </Row>
@@ -87,15 +122,66 @@ export default function EditQuiz() {
             }
 
 
-            <Modal isOpen={modal} toggle={toggle}>
-                <ModalHeader toggle={toggle}>Códigos do Inquérito</ModalHeader>
+            <Modal isOpen={modal} toggle={toggle} size="lg" backdrop={false}>
+                <ModalHeader toggle={toggle}>Atenção: Links do Inquérito</ModalHeader>
                 <ModalBody>
-                    m ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    <h5>Link do Inquérito</h5>
+                    <p>Partilhe este link com o seu publico alvo, para obter respostas.</p>
+
+                    <LinkArea link={"http://pesquisaapp.com/quiz-dlwkdnqndjqnd"}/>
+
+                    <Col className="text-center">
+                        Ou partilhe o código abaixo para aceder através do site
+                    </Col>
+
+                    <LinkArea link={"quiz-dlwkdnqndjqnd"}/>
+
+                    <br/>
+                    <h5>Link de Proprietário</h5>
+                    <p>Use Este link para editar o seu Inquérito e visualizar as respostas enviadas pêlos seus inquiridos.
+                        <span className="text-danger">(Nota: caso perca esse link não terá como aceder ao seu inquérito ).</span></p>
+
+                    <LinkArea link={"http://pesquisaapp.com/edit-wweerrtttyyys"}/>
+
+                    <Col className="text-center">
+                        Ou utilize o código abaixo para aceder através do site
+                    </Col>
+
+                    <LinkArea link={"edit-wweerrtttyyys"}/>
                 </ModalBody>
                 <ModalFooter>
                     <Button color="primary" onClick={toggle}>Entedido</Button>
                 </ModalFooter>
             </Modal>
         </CardLayout>
+    )
+}
+
+const LinkArea = (props) => {
+    const {link} = props;
+
+    const copyToClipBoard = (text) => {
+        navigator.clipboard.writeText(text);
+    }
+
+    return(
+        <Container md={12} className="bg-light rounded mb-3 mt-3" style={{padding: "10px"}}>
+            <Row className="justify-content-center">
+                <Col sm={11} className="overflow-auto">
+                    <span className="float-left">{link}</span>
+                </Col>
+                <Col sm={1}>
+                    <i
+                        id="link3"
+                        className="fa fa-copy cursor-pointer float-right"
+                        onClick={()=> copyToClipBoard(link)}
+                        style={{fontSize:"20px"}}
+                    />
+                </Col>
+            </Row>
+            <UncontrolledTooltip placement="bottom" target="link3">
+                Copy
+            </UncontrolledTooltip>
+        </Container>
     )
 }

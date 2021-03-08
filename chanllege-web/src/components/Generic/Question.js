@@ -73,7 +73,7 @@ export default function Question(props) {
                         {
                             options?.map((option, index)=> (
                                 <Row className="mb-2">
-                                    <Col xs={10} className>
+                                    <Col xs={12} className>
                                         <AvField
                                             label={"Opcao "+(index+1)}
                                             type="text"
@@ -86,15 +86,13 @@ export default function Question(props) {
                                             }}
                                         />
                                     </Col>
-                                    <Col xs={2} className="mt-4">
-                                        <i className="fa fa-close display-3 cursor-pointer" onClick={()=> removeLastOption()}/>
-                                    </Col>
                                 </Row>
                             ))
                         }
                         <Row className="justify-content-start mb-5">
                             <Col sm={12}>
                                 <Button color="success" onClick={()=> setOptions([...options, options.length])}>Adicionar Opcao</Button>
+                                <Button color="light" onClick={removeLastOption}>Remover Opcao</Button>
                             </Col>
                         </Row>
                     </div>
