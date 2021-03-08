@@ -26,22 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="970cfdf2-008a-453f-993c-5abb5838e619" name="Default Changelist" comment="adds categories endpoints">
-      <change afterPath="$PROJECT_DIR$/API/Controllers/InputTypesController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Application/InputTypes/GetInputTypes.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chanllege-web/src/components/Generic/Question.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chanllege-web/src/store/actions/inputTypes.action.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../chanllege-web/src/store/reducers/inputTypes.reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chanllege-web/src/assets/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../chanllege-web/src/store/actions/questions.action.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.chanllege-api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/obj/Debug/netcoreapp3.1/API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/Debug/netcoreapp3.1/API.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/API/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Domain/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Infrastructure/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Persistence/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Persistence/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chanllege-web/src/helpers/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chanllege-web/src/helpers/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chanllege-web/src/components/Generic/Question.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chanllege-web/src/components/Generic/Question.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../chanllege-web/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chanllege-web/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chanllege-web/src/views/CreateQuiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chanllege-web/src/views/CreateQuiz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chanllege-web/src/views/EditQuiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chanllege-web/src/views/EditQuiz.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +182,7 @@
       <workItem from="1614502185232" duration="27806000" />
       <workItem from="1614553494247" duration="20576000" />
       <workItem from="1614610653703" duration="39825000" />
-      <workItem from="1615124884357" duration="3610000" />
+      <workItem from="1615124884357" duration="4191000" />
     </task>
     <task id="LOCAL-00001" summary="create api structure">
       <created>1614277830450</created>

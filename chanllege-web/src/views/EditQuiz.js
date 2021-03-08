@@ -4,14 +4,17 @@ import {Button, Card, Modal, ModalBody, ModalFooter, ModalHeader, Row,Spinner, C
 import CardLayout from "../layouts/CardLayout";
 import {getInputTypes} from "../store/actions/inputTypes.action";
 import Question from "../components/Generic/Question";
+import {addElementInArray} from "../store/actions/questions.action";
 
 export default function EditQuiz() {
     const [modal, setModal] = useState(false);
+    const [showButtons, setShowButtons] = useState(true);
     const dispatch = useDispatch();
 
     const showQuizCodes = useSelector(state => state.settings.showQuizCodes);
     const inputs = useSelector(state => state.inputType.inputs);
     const isLoading = useSelector(state => state.inputType.isLoading);
+    const questions = useSelector(state => state.question.questions);
 
     console.log(inputs);
 
@@ -23,6 +26,15 @@ export default function EditQuiz() {
     }, []);
 
     const toggle = () => setModal(!modal);
+
+    const toggleShowButtons = () => {
+        setShowButtons(!showButtons);
+    }
+
+    const addQuestionHandler = () => {
+        dispatch(addElementInArray());
+        toggleShowButtons();
+    }
 
     if(isLoading) {
         return (
@@ -55,15 +67,24 @@ export default function EditQuiz() {
                 </Row>
             </Card>
 
-            <Question inputs={inputs}/>
+            {
+                questions?.map((question,index) =>(
+                    <Question inputs={inputs} toggleShowButtons={toggleShowButtons}/>
+                ))
+            }
 
-            <Row className="justify-content-end mt-3 mb-4 px-3">
-                <Button color="primary">Adicionar Questão</Button>
-            </Row>
+            {
+                showButtons &&
+                    <>
+                        <Row className="justify-content-end mt-3 mb-4 px-3">
+                            <Button color="primary" onClick={addQuestionHandler}>Adicionar Questão</Button>
+                        </Row>
 
-            <Row className="justify-content-center mt-3 mb-4 px-3">
-                <Button color="success" className="btn-block col-4">Publicar Inquérito</Button>
-            </Row>
+                        <Row className="justify-content-center mt-3 mb-4 px-3">
+                            <Button color="success" className="btn-block col-4">Publicar Inquérito</Button>
+                        </Row>
+                    </>
+            }
 
 
             <Modal isOpen={modal} toggle={toggle}>
